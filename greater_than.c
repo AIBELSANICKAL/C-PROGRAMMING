@@ -1,19 +1,27 @@
-#include<stdio.h>
-   int main(){
-       int n1,n2,n3;
-       printf("enter the numbers:");
-       scanf("%d%d%d",&n1,&n2,&n3);
-        if (n1>n2){
-         if(n1>n3){
-         printf(n1,"%d is the largest");}
-         }else{
-          printf(n3,"%d is the greatest");   
-        }  
-        else if(n3>n1){
-          if (n3>n2){
-          printf(n3"%d is the greatest");
+#include <stdio.h>
+    int main(){
+        int num1,num2,num3;
+        printf("enter the numbers:");
+        scanf("%d %d %d",&num1,&num2,&num3);
+        if(num1>num2){
+            if(num1>num3){
+                printf("the greatest is%d",num1);
+            }else{
+                printf("the largest number is %d",num3);
+            }
+        }else if(num2>num1){
+            if(num2>num3){
+                printf("the largest is%d",num2);
+            }else{
+                printf("the largest number is%d",num3);
+            }
+        }else if(num3>num1){
+            if(num3>num2){
+                printf("the largest number is%d",num3);
+            }else{
+                printf("the largest number is%d",num2);
         }else{
-              printf(n2"%d is the greatest");
-        }
-       return 0;
-       }
+            printf("the largest numbers are equal");
+        } 
+        return 0;
+       }        
