@@ -1,0 +1,30 @@
+#include<stdio.h>
+	int main(){
+	  int row,col,i,j;
+	  printf("enter the row and column:");
+	  scanf("%d%d",&row,&col);
+	  int matrix1[row][col],matrix2[row][col],matrix3[row][col];
+	  printf("enter the elements of first matrix:");
+	   for(i=0;i<row;i++){
+	     for( j=0;j<col;j++){
+	     scanf("%d",&matrix1[i][j]);
+	     }
+	  }
+	   printf("Enter the elements of second matrix:");
+	   for( i=0;i<row;i++){
+	    for( j=0;j<col;j++){
+	    scanf("%d",&matrix2[i][j]);
+	    }
+	}    
+	  
+	  for( i=0;i<row;i++){
+	   for( j=0;j<col;j++){
+	    matrix3[i][j]=matrix1[i][j]+matrix2[i][j];
+	    printf("%d",matrix3[i][j]);
+	   }
+	   printf("\n");
+	}    
+	    return 0;
+}	    
+	    
+	   
