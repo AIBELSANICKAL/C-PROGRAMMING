@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(){
+    int n,array[50];
+     scanf("%d",&n);
+    printf("Enter the element in the array:");
+    for(int i=0;i<n;i++){
+        scanf("%d",&array[i]);
+    }
+    passarray(carry,n);
+   return 0;
+} void passarray(int array[],int size){
+    for(int i=0;i<size;i++){
+        printf("%d",&array[i]);
+    }
+    return 0;
+}
+    int largestelement(int array[], int size){
+        int largest=array[0];
+        for(int i=0;i<size;i++){
+            if(array[i]>largest){
+                largest=array[i];
+            }
+            return largest;
+        }
+    }
