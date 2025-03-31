@@ -1,5 +1,5 @@
   #include<stdio.h>
-  #define PI 3.14159
+  #define PI 3.14
   int main(){
   int r1,r2,height;
   printf("\nEnter the radius of the circle :");
