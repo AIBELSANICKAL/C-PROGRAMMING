@@ -1,0 +1,25 @@
+#include struct employee{
+char name[20];
+float salary;
+int id;
+}employee;
+int main(){
+int n;
+printf("\n Enter the number of employees");
+scanf("%d",&n);
+struct employee s[n];
+for (int i=0;i printf("\n Enter the name");
+getchar();
+fgets(s[i].name,sizeof(s[i].name),stdin);
+printf("\n enter the salary");
+scanf("%f",&s[i].salary);
+printf("\n enter the id");
+scanf("%d",&s[i].id);
+}
+printf("\n Enter the employee details");
+for(int i=0;i printf("\n name:%s",s[i].name);
+printf("\n salary:%f",s[i].salary);
+printf("\n id:%d",s[i].id);
+}
+return 0;
+}
